@@ -4,6 +4,12 @@ import CommonFooter from '@components/CommonFooter';
 import Link from 'next/link';
 import LINK_PATHS from '@constants/LinkPath';
 
+
+export const metadata = {
+    title: "Privacy Policy - Doctors Digital",
+    description: "Learn how Doctor's Digital collects, uses, and protects your personal data. Our privacy policy ensures your information is secure and handled with care.",
+};
+
 export default function PrivacyPolicy() {
     return (
         <div className="">
@@ -16,7 +22,7 @@ export default function PrivacyPolicy() {
 
                 <h2 className="text-xl md:text-2xl font-semibold mb-4">1. Introduction</h2>
                 <p className="mb-4">
-                    Welcome to Doctor's Digital. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and protect your personal data when you use our services.
+                    Welcome to Doctors Digital. We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, and protect your personal data when you use our services.
                 </p>
 
                 <h2 className="text-xl md:text-2xl font-semibold mb-4">2. Information We Collect</h2>
@@ -92,7 +98,7 @@ export default function PrivacyPolicy() {
                     If you have any questions about this Privacy Policy, please contact us at:
                 </p>
                 <p className="mb-4">
-                    Doctor's Digital<br />
+                    Doctors Digital<br />
                     Email: <Link className='font-semibold hover:text-blue-600' href={LINK_PATHS.DD}>Doctors Digital</Link>
                 </p>
             </div>
