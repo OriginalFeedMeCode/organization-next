@@ -14,7 +14,7 @@ function notFound() {
         <div className='w-full md:min-h-max h-[100svh] flex flex-col'>
             <CommonHeader />
             <div className='flex-1 py-6'>
-                <div className='r-w w-full h-full flex flex-col justify-center'>
+                <div className='r-w h-full flex flex-col justify-center'>
                     <div className='w-full'>
                         <h1 className="text-2xl md:text-4xl font-bold mb-4">404 - Page Not Found</h1>
                         <p className="md:text-lg mb-4">The page you are looking for does not exist.</p>
