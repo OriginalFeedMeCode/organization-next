@@ -10,8 +10,6 @@ export const metadata = {
 
 function HomePage() {
 
-  const oo = process.env.NEXTAUTH_URL;
-
   const features = [
     {
       title: "Efficient Prescription Updates",
@@ -39,7 +37,7 @@ function HomePage() {
             <Accordian features={features} />
           </div>
           <div>
-            {oo}
+
           </div>
         </div>
       </div>

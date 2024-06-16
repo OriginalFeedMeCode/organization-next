@@ -67,7 +67,7 @@ const RegisterForm = () => {
     };
 
     return (
-        <div className='w-full'>
+        <div className='w-full '>
             <form className='grid grid-cols-1 gap-3' onSubmit={submitForm}>
                 <div className='mb-2 md:mb-0'>
                     <label className="block mb-1 text-sm font-medium text-gray-900">
