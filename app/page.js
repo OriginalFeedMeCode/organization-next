@@ -32,7 +32,7 @@ function HomePage() {
         <div className='r-w grid grid-cols-1 md:grid-cols-3 gap-5'>
           <div className='md:col-span-2'>
             <h1 className=' text-xl md:text-2xl font-semibold mb-4 '>Welcome Back to Doctor's Digital</h1>
-            <p className='mb-0 md:mb-6'>Log in to your Doctor's Digital account to access powerful tools designed to simplify your practice management and enhance patient care. With our secure platform, you can seamlessly manage appointments, update prescriptions, and access patient details anytime, anywhere.</p>
+            <p className='mb-0 md:mb-6 text-sm'>Log in to your Doctor's Digital account to access powerful tools designed to simplify your practice management and enhance patient care. With our secure platform, you can seamlessly manage appointments, update prescriptions, and access patient details anytime, anywhere.</p>
             <h2 className='hidden md:block text-xl md:text-2xl font-semibold mb-6'>Why choose us?</h2>
             <Accordian features={features} />
           </div>

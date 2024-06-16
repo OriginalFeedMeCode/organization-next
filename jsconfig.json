@@ -4,6 +4,7 @@
     "paths": {
       "@components*": ["./components*"],
       "@constants*": ["./constants*"],
+      "@util*": ["./util*"]
     }
   }
 }

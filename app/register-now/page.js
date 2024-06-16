@@ -1,6 +1,7 @@
 import Accordian from '@components/Accordian';
 import CommonFooter from '@components/CommonFooter'
 import CommonHeader from '@components/CommonHeader'
+import RegisterForm from '@components/RegisterForm';
 import React from 'react'
 
 export const metadata = {
@@ -34,12 +35,12 @@ function RegisterNow() {
                 <div className='r-w grid grid-cols-1 md:grid-cols-3 gap-5'>
                     <div className='md:col-span-2'>
                         <h1 className=' text-xl md:text-2xl font-semibold mb-4 '>Create a New Account with Doctor's Digital</h1>
-                        <p className='mb-0 md:mb-6'>Welcome to Doctor's Digital – where modern healthcare meets seamless management. Join our growing community of healthcare professionals and experience the future of medical practice management. By signing up with Doctor's Digital, you gain access to a comprehensive suite of tools designed to streamline your practice, enhance patient care, and boost your efficiency.</p>
+                        <p className='mb-0 md:mb-6 text-sm'>Welcome to Doctor's Digital – where modern healthcare meets seamless management. Join our growing community of healthcare professionals and experience the future of medical practice management. By signing up with Doctor's Digital, you gain access to a comprehensive suite of tools designed to streamline your practice, enhance patient care, and boost your efficiency.</p>
                         <h2 className='hidden md:block text-xl md:text-2xl font-semibold mb-6'>Why choose us?</h2>
                         <Accordian features={features} />
                     </div>
                     <div>
-
+                        <RegisterForm />
                     </div>
                 </div>
             </div>
