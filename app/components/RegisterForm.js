@@ -1,8 +1,9 @@
 "use client"
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
-import CryptionUtil from '@util/CryptionUtil'
+import CryptionUtil from '@util/security/CryptionUtil'
 import { useRouter } from 'next/navigation';
+import SendMail from '@util/email/SendMail';
 
 
 
@@ -48,6 +49,9 @@ const RegisterForm = () => {
             if (response.status === 200) {
                 const data = await response.json();
                 toast.success(data.message);
+                const link = "http://localhost:9090/doctors-digital/v1/users/activation/?payload=" + data.payload;
+                const { sendAccountVerificationEmail } = SendMail;
+                await sendAccountVerificationEmail(formData.firstName, formData.userEmail, link);
                 router.replace('/')
             } else {
                 const data = await response.json();

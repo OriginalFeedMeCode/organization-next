@@ -4,7 +4,8 @@
     "paths": {
       "@components*": ["./components*"],
       "@constants*": ["./constants*"],
-      "@util*": ["./util*"]
+      "@util*": ["./util*"],
+      "@firebase_config*": ["./firebase*"]
     }
   }
 }
